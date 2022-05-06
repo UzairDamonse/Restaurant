@@ -29,6 +29,160 @@
   width: 100%;
 }
 
-section {
-  min-height: 100px;
+#About {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Images/About-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 50vh;
+}
+
+#About-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+#About-header h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+#About-image {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.about-image::before {
+  position: absolute;
+  left: 33px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  content: "";
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+.about-image:hover {
+  transform: scale(1.03);
+}
+.about-image:hover::before {
+  left: 15px;
+  top: 15px;
+}
+.about-image:hover::after {
+  right: 15px;
+  bottom: 15px;
+}
+.about-image::after {
+  position: absolute;
+  right: 33px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 200;
+  content: "";
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+ul li i {
+  transform: scale(1.2);
+  color: #cda45e;
+}
+
+.section-title h2 {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.section-title p {
+  color: #cda45e;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+#Why-us {
+  background-color: #0c0b09;
+}
+
+.Why-us .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #1a1814;
+}
+.Why-us .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #cda45e;
+}
+.Why-us .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Why-us .box h4::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+.Why-us .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.Why-us .box:hover {
+  background: #cda45e;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+.Why-us .box:hover span,
+.Why-us .box:hover h4,
+.Why-us .box:hover p {
+  color: #fff;
+}
+
+#Menu {
+  background-color: #1a1814;
+}
+
+.menu-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+#Specials {
+  background-color: #0c0b09;
 }
